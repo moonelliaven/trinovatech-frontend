@@ -7,6 +7,7 @@
 
 body {
     background-color: var(--soft-blue-white);
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -270,7 +271,8 @@ h3 {
     gap: 10px;
     margin-top: 20px;
 }
-
+/* Perbaikan CSS untuk card category */
+/* Card category styles */
 .card {
     padding: 10px 30px;
     border: 1px solid var(--grey);
@@ -281,6 +283,7 @@ h3 {
     margin-top: 10px;
     gap: 10px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .card i {
@@ -288,8 +291,33 @@ h3 {
     transition: all 0.3s ease;
 }
 
-.card:hover,
-.card.active {
+/* Hover state */
+.card:hover {
+    background-color: var(--blue-primary);
+    color: white;
+    border: 1px solid var(--blue-primary);
+}
+
+.card:hover i {
+    color: white;
+}
+
+/* Active state (yang dipilih) */
+.card.active-1 {
+    background-color: var(--blue-primary);
+    color: white;
+    border: 1px solid var(--blue-primary);
+}
+
+.card.active-1 i {
+    color: white;
+}
+.card i {
+    color: var(--blue-primary);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
     background-color: var(--blue-primary);
     color: white;
     border: 1px solid var(--blue-primary);
@@ -316,9 +344,9 @@ h3 {
     transition: all 0.3s ease;
     margin: 5px;
 }
-
-.card-2:hover {
-    transform: translateY(-5px);
+ 
+.card-2.active:hover {
+    transform: translateY(-10px);
 }
 
 .card-2 h4 {
@@ -451,7 +479,40 @@ h3 {
 }
 
 .cta button:hover {
-    background-color: rgb(20, 20, 73);
-    color: var(--white);
     gap: 15px;
+}
+
+/* reveal */
+.reveal {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hover effect untuk navbar - garis muncul */
+.navbar li a {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--blue-primary);
+    transition: width 0.3s ease;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
 }

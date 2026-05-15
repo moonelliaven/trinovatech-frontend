@@ -7,6 +7,7 @@
 
 body {
     background-color: var(--soft-blue-white);
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -283,6 +284,10 @@ h3 {
     gap: 20px;
 }
 
+.card.active:hover {
+    transform: translateY(-4px);
+}
+
 .logo-card {
     padding: 20px;
     border-radius: 20px;
@@ -346,6 +351,8 @@ h3 {
     border-radius: 200px;
 }
 
+
+
 /* -----------------------card-section---------------------------- */
 .trusted {
     padding: 50px;
@@ -364,14 +371,19 @@ h3 {
     color: var(--blue-primary);
     border-radius: 10px;
     font-size: 25px;
+    transition: all 0.3s ease;
 }
 
-.card-3 {
+.card-3{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+}
+
+.card-3 i:hover {
+    transform: scale(1.1);
 }
 
 .card-3 h4 {
@@ -381,4 +393,39 @@ h3 {
 .trusted .card-section {
     display: flex;
     gap: 80px;
+}
+
+/* reveal */
+.reveal {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hover effect untuk navbar - garis muncul */
+.navbar li a {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--blue-primary);
+    transition: width 0.3s ease;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
 }

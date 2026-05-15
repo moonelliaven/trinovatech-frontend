@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TriNova Tech - Smart Solutions for a Better Tomorrow</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    
     <!-- header -->
     <div class="header">
         <div class="logo">
@@ -25,19 +26,19 @@
             <li><a href="team.html">Our Team</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <button>Get Started</button>
+        <button onclick="window.location.href='login.html'">Get Started</button>
     </div>
 
     <!-- Banner -->
     <div class="banner">
         <div class="sect-one">
-            <h5>inovating your digital future</h5>
-            <h1>Smart Solution,</h1>
-            <h1>For a Better Tomorrow</h1>
-            <p>TriNova Tech hadir sebagai solusi digital inovatif untuk membantu bisnis dan individu berkembang di era teknologi</p>
-            <div class="button-section">
-                <div class="btn" style="background-color: var(--blue-primary);"><a href=""></a>Our Services <i class="fa-solid fa-arrow-right"></i></div>
-                <div class="btn" style="border: 1px solid white;"><a href=""></a>Learn More<i class="fa-solid fa-arrow-right"></i></div>
+            <h5 class="reveal">innovating your digital future</h5>
+            <h1 class="reveal">Smart Solutions,</h1>
+            <h1 class="reveal">For a Better Tomorrow</h1>
+            <p class="reveal">We are ready to help you turn your ideas into innovative digital solutions that create impact for your business.</p>
+            <div class="button-section reveal">
+                <div class="btn" style="background-color: var(--blue-primary);"><a href="services.html"></a>Our Services <i class="fa-solid fa-arrow-right"></i></div>
+                <div class="btn" style="border: 1px solid white;" onclick="document.querySelector('.services').scrollIntoView({behavior: 'smooth'})"><a href=""></a>Learn More<i class="fa-solid fa-arrow-right"></i></div>
             </div>
         </div>
         <div class="sect-one"></div>
@@ -45,18 +46,18 @@
 
     <!-- what we do -->
     <div class="services">
-        <h5>What We Do</h5>
-        <h1>We Provide The Best Solution <br> for Your Business</h1>
+        <h5 class="reveal">What We Do</h5>
+        <h1 class="reveal">We Provide The Best Solution <br> for Your Business</h1>
         <div class="card-sect">
             <!-- card 1 -->
-            <div class="card">
+            <div class="card reveal">
                 <div class="logo-sect">
                     <img src="../img/logo/code.png" alt="">
                 </div>
                 <div class="desc-sect">
                     <div class="one">
                     <h3>Software Development</h3>
-                    <p>Membangun solusi perangkat lunak yang inovatif dan sesuai kebutuhan anda.</p>
+                    <p>Building innovative software solutions tailored to your needs.</p>
                     </div>
                     <div class="two">
                         <div class="cta"><a href="">Learn More</a><img src="../img/logo/arrow-right-blue.png" alt=""></div>
@@ -64,14 +65,14 @@
                 </div>
             </div>
             <!-- card 2 -->
-            <div class="card">
+            <div class="card reveal">
                 <div class="logo-sect">
                     <img src="../img/logo/layout.png" alt="">
                 </div>
                 <div class="desc-sect">
                     <div class="one">
                     <h3>App Development</h3>
-                    <p>Mengembangkan aplikasi mobile yang user-friendly berperforma tinggi.</p>
+                    <p>Developing user-friendly, high-performance mobile applications.</p>
                     </div>
                     <div class="two">
                         <div class="cta"><a href="">Learn More</a><img src="../img/logo/arrow-right-blue.png" alt=""></div>
@@ -79,29 +80,29 @@
                 </div>
             </div>
             <!-- card 3 -->
-            <div class="card">
+            <div class="card reveal">
                 <div class="logo-sect">
                     <img src="../img/logo/cloud.png" alt="">
                 </div>
                 <div class="desc-sect">
                     <div class="one">
                     <h3>Cloud Solutions</h3>
-                    <p>Menyediakan layanan cloud yang aman, skalabel, dan efisien bagi bisnis anda.</p>
+                    <p>Providing secure, scalable, and efficient cloud services for your business.</p>
                     </div>
                     <div class="two">
                         <div class="cta"><a href="">Learn More</a><img src="../img/logo/arrow-right-blue.png" alt=""></div>
                     </div>
                 </div>
             </div>
-            <!-- card 3 -->
-            <div class="card">
+            <!-- card 4 -->
+            <div class="card reveal">
                 <div class="logo-sect">
                     <img src="../img/logo/checklist-circle.png" alt="">
                 </div>
                 <div class="desc-sect">
                     <div class="one">
                     <h3>IT Security</h3>
-                    <p>Menyediakan layanan keamanan IT yang komprehensif untuk melindungi aset digital anda.</p>
+                    <p>Providing comprehensive IT security services to protect your digital assets.</p>
                     </div>
                     <div class="two">
                         <div class="cta"><a href="">Learn More</a><img src="../img/logo/arrow-right-blue.png" alt=""></div>
@@ -115,17 +116,17 @@
     <!-- about us -->
     <div class="about">
         <div class="sect-onee">
-            <h5>ABOUT US</h5>
-            <h3>Driving Innovation, <br> Delivering Results</h3>
-            <p>TriNova Tech adalah perusahaan teknologi yang berfokus pada pemberian solusi digital terbaik dengan teknologi terkini dan tim profesional berpengalaman</p>
+            <h5 class="reveal">ABOUT US</h5>
+            <h3 class="reveal">Driving Innovation, <br> Delivering Results</h3>
+            <p class="reveal">TriNova Tech is a technology company focused on providing the best digital solutions with the latest technology and an experienced professional team.</p>
             <div class="menu-sect">
-                <div class="sect"><img src="../img/logo/checklist-circle.png" alt=""><p>Solusi Inovatif dan Terpecaya</p></div>
-                <div class="sect"><img src="../img/logo/checklist-circle.png" alt=""><p>Tim Profesional dan Berpengalaman</p></div>
-                <div class="sect"><img src="../img/logo/checklist-circle.png" alt=""><p>Layanan cepat dan Responsif</p></div>
+                <div class="sect reveal"><img src="../img/logo/checklist-circle.png" alt=""><p>Innovative and Trusted Solutions</p></div>
+                <div class="sect reveal"><img src="../img/logo/checklist-circle.png" alt=""><p>Professional and Experienced Team</p></div>
+                <div class="sect reveal"><img src="../img/logo/checklist-circle.png" alt=""><p>Fast and Responsive Service</p></div>
             </div>
-            <button>Learn More <img src="img/logo/arrow-right.png" alt=""></button>
+            <button class="reveal">Learn More <img src="img/logo/arrow-right.png" alt=""></button>
         </div>
-        <div class="sect-twoo">
+        <div class="sect-twoo reveal">
             <img class="about-img" src="../img/placehorder/img-2.png" alt="">
 
             <div class="menu-sect">
@@ -160,39 +161,42 @@
 
     <!-- process -->
     <div class="process">
-        <h5>OUR PROCESS</h5>
-        <h3>Our Simple & Effective Process</h3>
+        <h5 class="reveal">OUR PROCESS</h5>
+        <h3 class="reveal">Our Simple & Effective Process</h3>
         <div class="sect-menu">
-            <div class="s-menu">
+            <div class="s-menu reveal">
                 <div class="logo"><img src="../img/logo/search.png" alt=""></div>
                 <h4>01. Discover</h4>
-                <p>Kami memahami kebutuhan bisnis Anda secara mendalam</p>
+                <p>We deeply understand your business needs.</p>
             </div>
-            <div class="s-menu">
+            <hr class="reveal">
+            <div class="s-menu reveal">
                 <div class="logo"><img src="../img/logo/edit.png" alt=""></div>
                 <h4>02. Plan</h4>
-                <p>Menyusun strategu dan solusi yang tepat untuk anda</p>
+                <p>Developing the right strategy and solution for you.</p>
             </div>
-            <div class="s-menu">
+            <hr class="reveal">
+            <div class="s-menu reveal">
                 <div class="logo"><img src="../img/logo/code-white.png" alt=""></div>
                 <h4>03. Develop</h4>
-                <p>Proses pengembangan dengan teknologi terbaik</p>
+                <p>Development process using the best technology.</p>
             </div>
-            <div class="s-menu">
+            <hr class="reveal">
+            <div class="s-menu reveal">
                 <div class="logo"><img src="../img/logo/send.png" alt="" ></div>
                 <h4>04. Deliver</h4>
-                <p>Mengirim solusi berkualitas tepat waktu</p>
+                <p>Delivering quality solutions on time.</p>
             </div>
         </div>
     </div>
 
     <!-- projects/products -->
     <div class="products">
-        <h5>OUR PROJECTS</h5>
-        <h3>Explore Our Latest Projects</h3>
+        <h5 class="reveal">OUR PROJECTS</h5>
+        <h3 class="reveal">Explore Our Latest Projects</h3>
         <div class="product-menu">
             <!-- 1 p -->
-            <div class="p-menu">
+            <div class="p-menu reveal project-card">
                 <div class="pm-img">
                     <img src="img/placehorder-2/img-1.png" alt="">
                 </div>
@@ -202,7 +206,7 @@
                 </div>
             </div>
             <!-- 1 p -->
-            <div class="p-menu">
+            <div class="p-menu reveal project-card">
                 <div class="pm-img">
                     <img src="img/placehorder-2/img-2.png" alt="">
                 </div>
@@ -212,7 +216,7 @@
                 </div>
             </div>
             <!-- 1 p -->
-            <div class="p-menu">
+            <div class="p-menu reveal project-card">
                 <div class="pm-img">
                     <img src="img/placehorder-2/img-3.png" alt="">
                 </div>
@@ -222,7 +226,7 @@
                 </div>
             </div>
             <!-- 1 p -->
-            <div class="p-menu">
+            <div class="p-menu reveal project-card">
                 <div class="pm-img">
                     <img src="img/placehorder-2/img 4.png" alt="">
                 </div>
@@ -234,19 +238,19 @@
         </div>  
     </div>
     <div class="testi">
-    <h5>TESTIMONIALS</h5>
-    <h3>What Our Clients Say</h3>
+    <h5 class="reveal">TESTIMONIALS</h5>
+    <h3 class="reveal">What Our Clients Say</h3>
 
     <div class="card-sectt">
-        <i id="prev" class="fa-solid fa-chevron-left"></i>
+        <i id="prev" class="fa-solid fa-chevron-left reveal"></i>
 
         <div class="slider-container">
-            <div class="slider" id="slider">
+            <div class="slider reveal" id="slider">
 
                 <!-- card 1 -->
                 <div class="card">
                     <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"TriNova Tech membantu kami mengembangkan sistem yang sangat memudahkan operasional bisnis kami."</p>
+                    <p>"TriNova Tech helped us develop a system that greatly streamlined our business operations."</p>
 
                     <div class="box">
                         <img src="../img/person/one.png" alt="">
@@ -260,7 +264,7 @@
                 <!-- card 2 -->
                 <div class="card">
                     <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"Aplikasi Mobile yang dibuat oleh TriNova Tech memiliki performa luar biasa dan disukai oleh pengguna kami."</p>
+                    <p>"The mobile app developed by TriNova Tech has outstanding performance and is loved by our users."</p>
 
                     <div class="box">
                         <img src="../img/person/two.png" alt="">
@@ -274,7 +278,7 @@
                 <!-- card 3 -->
                 <div class="card">
                     <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"Keamanan data perusahaan kami kini jauh lebih terjamin berkat solusi IT Security dari TriNova Tech."</p>
+                    <p>"Our company's data security is now much more reliable thanks to TriNova Tech's IT Security solutions."</p>
 
                     <div class="box">
                         <img src="../img/person/three.png" alt="">
@@ -288,7 +292,7 @@
                 <!-- card 4 -->
                 <div class="card">
                     <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"Pelayanan cepat, profesional, dan hasil akhir sangat memuaskan."</p>
+                    <p>"Fast, professional service, and the final results are very satisfying."</p>
 
                     <div class="box">
                         <img src="../img/person/four.png" alt="">
@@ -302,7 +306,7 @@
                 <!-- card 5 -->
                 <div class="card">
                     <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"Tim mereka sangat komunikatif selama project berlangsung."</p>
+                    <p>"Their team was very communicative throughout the project."</p>
 
                     <div class="box">
                         <img src="../img/person/five.png" alt="">
@@ -316,7 +320,7 @@
                 <!-- card 6 -->
                 <div class="card">
                     <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"TriNova Tech membantu transformasi digital perusahaan kami secara signifikan."</p>
+                    <p>"TriNova Tech significantly advanced our company's digital transformation."</p>
 
                     <div class="box">
                         <img src="../img/person/six.png" alt="">
@@ -330,44 +334,45 @@
             </div>
         </div>
 
-        <i id="next" class="fa-solid fa-chevron-right"></i>
+        <i id="next" class="fa-solid fa-chevron-right reveal"></i>
     </div>
 </div>
 
     <!-- FAQ Section -->
     <div class="faq">
         <div class="onee">
-            <h5>FAQ</h5>
-            <h3 style="color: white;">Frequently Asked Questions</h3>
+            <h5 class="reveal">FAQ</h5>
+            <h3 style="color: white;" class="reveal">Frequently Asked Questions</h3>
             <div class="boxxes">
                 <!-- box-opened -->
-                <div class="box">
+                <div class="box show reveal">
                     <div class="b-desc">
-                        <h4>Apa layanan utama TriNova Tech?</h4>
-                        <p>Kami menyediakan berbagai layanan digital seperti Software Developement, Mobile App Developement, Cloud Solution, IT Security, dan sebagainya</p>
+                        <h4>What are TriNova Tech's main services?</h4>
+                        <p class="show">We provide various digital services such as Software Development, Mobile App Development, Cloud Solutions, IT Security, and more.</p>
                     </div>
-                    <img src="../img/logo/minus.png" alt="">
+                    
+                    <img class="toggle-icon" src="../img/logo/minus.png" alt="">
                 </div>
-                <div class="box">
+                <div class="box reveal">
                     <div class="b-desc">
-                        <h4>Berapa lama waktu pengerjaan proyek?</h4>
-                        <p></p>
+                        <h4>How long does a project take?</h4>
+                        <p>Project timelines vary depending on complexity and requirements. On average, most projects take between 2 to 12 weeks from planning to final delivery.</p>
                     </div>
-                    <img src="../img/logo/plus.png" alt="">
+                    <img class="toggle-icon" src="../img/logo/plus.png" alt="">
                 </div>
-                <div class="box">
+                <div class="box reveal">
                     <div class="b-desc">
-                        <h4>Apakah TriNova Tech melayani perusahaan kecil?</h4>
-                        <p></p>
+                        <h4>Does TriNova Tech serve small businesses?</h4>
+                        <p>Yes, we work with businesses of all sizes, from startups and small businesses to larger enterprises, providing scalable digital solutions.</p>
                     </div>
-                    <img src="../img/logo/plus.png" alt="">
+                    <img class="toggle-icon" src="../img/logo/plus.png" alt="">
                 </div>
-                <div class="box">
+                <div class="box reveal">
                     <div class="b-desc">
-                        <h4>Bagaimana proses memulai proyek dengan TriNova Tech?</h4>
-                        <p></p>
+                        <h4>How to start a project with TriNova Tech?</h4>
+                        <p>You can start by contacting us through our website or consultation form. Our team will discuss your needs and recommend the best solution.</p>
                     </div>
-                    <img src="../img/logo/plus.png" alt="">
+                    <img class="toggle-icon" src="../img/logo/plus.png" alt="">
                 </div>
             </div>
         </div>
@@ -377,10 +382,10 @@
         
     </div>
     <div class="end">
-        <div class="container">
+        <div class="container reveal">
             <div class="content">
                 <h3 style="color: white;">Ready to Transform Your Business?</h3>
-                <p style="color: white;">Hubungi kami hari ini untuk konsultasi gratis dan temukan bagaimana TriNova Tech dapat membantu bisnis Anda tumbuh dan sukses di era digital.</p>
+                <p style="color: white;">Contact us today for a free consultation and discover how TriNova Tech can help your business grow and succeed in the digital era.</p>
             </div>
             <button><a href="">Contact Us</a><img src="img/logo/arrow-right-blue.png" alt=""></button>
         </div>
@@ -391,7 +396,7 @@
         <div class="content-footer">
             <div class="frame-one">
                 <img src="img/logo-text-white.png" alt="" style="width: 200px;">
-                <p>TriNova Tech adalah mitra teknologi terpecaya untuk membantu bisnis tumbuh dan berenovasi di era digital</p>
+                <p>TriNova Tech is a trusted technology partner helping businesses grow and innovate in the digital era.</p>
                 <div class="logomeds">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-linkedin-in"></i>
@@ -402,30 +407,40 @@
                 <div class="list">
                     <h4>Quick Links</h4>
                     <div class="list-menu">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Services</a>
-                        <a href="">Products</a>
-                        <a href="">Our Team</a>
-                        <a href="">Contact</a>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="product.html">Projects</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                 </div>
                 <div class="list">
                     <h4>Our Services</h4>
                     <div class="list-menu">
-                        <a href="">Mobile App Developement</a>
-                        <a href="">Software Developement</a>
-                        <a href="">Cloud Solution</a>
-                        <a href="">Products</a>
-                        <a href="">IT Security</a>
+                        <a href="product.html">Mobile App Development</a>
+                        <a href="product.html">Software Development</a>
+                        <a href="product.html">Cloud Solution</a>
+                        <a href="product.html">Products</a>
+                        <a href="product.html">IT Security</a>
                     </div>
                 </div>
                 <div class="list">
                     <h4>Contact Us</h4>
                     <div class="list-menu">
-                        <a href=""><i class="fa-solid fa-location-dot"></i>jl. Panglima Batur</a>
-                        <a href=""><i class="fa-solid fa-phone"></i>+62 821 5889 1284</a>
-                        <a href=""><i class="fa-solid fa-envelope"></i>info@trinovatech.com</a>
+                        <a href="contact.html"><i class="fa-solid fa-location-dot"></i>Jl. Panglima Batur</a>
+                        <a href="contact.html"><i class="fa-solid fa-phone"></i>+62 821 5889 1284</a>
+                        <a href="contact.html"><i class="fa-solid fa-envelope"></i>info@trinovatech.com</a>
+                    </div>
+                </div>
+                <div class="list">
+                    <h4>Other</h4>
+                    <div class="list-menu">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-service.html">Terms of Service</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="career.html">Career</a>
+                        <a href="blog.html">Blog</a>
                     </div>
                 </div>
             </div>
@@ -433,15 +448,16 @@
         <hr>
         <div class="new">
             <div class="oneo">
-                <p style="color: white;">© 2026 TriNova Tech. All Right reserved. </p>
+                <p style="color: white;">© 2026 TriNova Tech. All Rights Reserved.</p>
             </div>
             <div class="twot">
                 <p style="color: white;">Privacy Policy</p>
-                <p style="color: white;">Terms of Services</p>
+                <p style="color: white;">Terms of Service</p>
             </div>
         </div>
     </div>
 
     <script src="js/index.js"></script>
+    <script src="js/loading.js"></script>
 </body>
 </html>
